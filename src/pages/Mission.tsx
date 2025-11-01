@@ -15,7 +15,7 @@ const Mission = () => {
             <img 
               src={tennisGroup} 
               alt="Serve For All Tennis Club students and coaches on the court" 
-              className="w-4/5 rounded-lg shadow-lg mx-auto"
+              className="w-3/5 rounded-lg shadow-lg mx-auto"
             />
           </div>
 
