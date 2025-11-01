@@ -14,7 +14,7 @@ const Home = () => {
         <section className="bg-gradient-to-br from-primary/10 via-secondary/10 to-background min-h-[calc(100vh-4rem)] flex items-center">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center">
-              <img src={logo} alt="Serve For All" className="h-48 mx-auto mb-6" />
+              <img src={logo} alt="Serve For All Tennis Club Coaches" className="w-full max-w-2xl mx-auto mb-8 rounded-lg shadow-lg" />
               <h1 className="text-5xl font-bold mb-6">Serve For All</h1>
               <p className="text-xl text-muted-foreground mb-8">
                 Empowering underserved communities through tennis education and mentorship
