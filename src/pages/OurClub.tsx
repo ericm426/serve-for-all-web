@@ -30,7 +30,7 @@ const OurClub = () => {
 
               <Card>
                 <CardHeader>
-                  <img src={danielMa} alt="Daniel Ma" className="w-full h-64 object-cover object-top rounded-md mb-4" />
+                  <img src={danielMa} alt="Daniel Ma" className="w-full h-auto rounded-md mb-4" />
                   <CardTitle>Daniel Ma</CardTitle>
                 </CardHeader>
                 <CardContent>
