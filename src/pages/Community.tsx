@@ -22,21 +22,20 @@ const Community = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="border-l-4 border-primary pl-4">
-                  <p className="font-semibold">Maria's Journey</p>
+                  <p className="font-semibold">Grace's Journey</p>
                   <p className="text-sm text-muted-foreground">
-                    "Started as a complete beginner and now competing at the regional leve. Serve For All gave me
+                    "Started as a complete beginner and now competing in UTR tournaments. Serve For All gave me
                     confidence on and off the court."
                   </p>
                 </div>
                 <div className="border-l-4 border-secondary pl-4">
-                  <p className="font-semibold">James' Achievement</p>
+                  <p className="font-semibold">Epsilon's Achievement</p>
                   <p className="text-sm text-muted-foreground">
-                    "The mentorship program helped me get into my dream college. Tennis opened doors I never knew
-                    existed."
+                    "The program helped me learn so much about tennis. Tennis opened doors I never knew existed."
                   </p>
                 </div>
                 <div className="border-l-4 border-primary pl-4">
-                  <p className="font-semibold">Sarah's Impact</p>
+                  <p className="font-semibold">Eben's Impact</p>
                   <p className="text-sm text-muted-foreground">
                     "After learning here, I became a volunteer coach. Now I'm giving back to the community that gave so
                     much to me."
@@ -55,11 +54,11 @@ const Community = () => {
                   We're grateful for our partnerships with local organizations that help make our programs possible:
                 </p>
                 <ul className="space-y-2 text-muted-foreground">
-                  <li>• Local Parks & Recreation Department</li>
-                  <li>• Youth Development Foundation</li>
-                  <li>• Community Sports Alliance</li>
-                  <li>• Educational Excellence Initiative</li>
-                  <li>• Health & Wellness Coalition</li>
+                  <li>• Franklin Atletic Club</li>
+                  <li>• Walled Lake Western High School</li>
+                  <li>• Novi High School and Middle School</li>
+                  <li>• Michigan New Century Chinese School</li>
+                  <li>• H2EVO</li>
                 </ul>
               </CardContent>
             </Card>
