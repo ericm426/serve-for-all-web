@@ -23,13 +23,16 @@ const News = () => {
           </p>
 
           <Tabs defaultValue="august-2025" className="w-full">
-            <TabsList className="grid w-full grid-cols-2 lg:grid-cols-5 mb-8">
-              <TabsTrigger value="august-2025">August 2025</TabsTrigger>
-              <TabsTrigger value="july-2025">July 2025</TabsTrigger>
-              <TabsTrigger value="june-2025">June 2025</TabsTrigger>
-              <TabsTrigger value="may-2025">May 2025</TabsTrigger>
-              <TabsTrigger value="2024">2024 Class</TabsTrigger>
-            </TabsList>
+            <div className="flex flex-col md:flex-row gap-8">
+              <TabsList className="flex flex-col h-fit md:w-64 shrink-0">
+                <TabsTrigger value="august-2025" className="w-full justify-start">August 2025</TabsTrigger>
+                <TabsTrigger value="july-2025" className="w-full justify-start">July 2025</TabsTrigger>
+                <TabsTrigger value="june-2025" className="w-full justify-start">June 2025</TabsTrigger>
+                <TabsTrigger value="may-2025" className="w-full justify-start">May 2025</TabsTrigger>
+                <TabsTrigger value="2024" className="w-full justify-start">2024 Class</TabsTrigger>
+              </TabsList>
+
+              <div className="flex-1">
 
             {classSchedules.map((schedule) => (
               <TabsContent 
@@ -110,6 +113,8 @@ const News = () => {
                 </CardContent>
               </Card>
             </TabsContent>
+              </div>
+            </div>
           </Tabs>
         </div>
       </main>
