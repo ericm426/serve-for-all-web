@@ -33,6 +33,34 @@ const Contact = () => {
                 </CardContent>
               </Card>
 
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Phone className="h-5 w-5 text-primary" />
+                    Phone
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <a href="tel:+1234567890" className="text-primary hover:underline">
+                    (123) 456-7890
+                  </a>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <MapPin className="h-5 w-5 text-primary" />
+                    Address
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">
+                    123 Community Street<br />
+                    Your City, ST 12345
+                  </p>
+                </CardContent>
+              </Card>
 
               <Card className="bg-primary text-primary-foreground">
                 <CardHeader>
