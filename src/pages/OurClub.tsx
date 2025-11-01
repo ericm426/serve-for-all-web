@@ -4,6 +4,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import danielMa from "@/assets/daniel-ma.png";
 import ericMu from "@/assets/eric-mu.jpg";
 import kennethHu from "@/assets/kenneth-hu.png";
+import maddieMurphy from "@/assets/maddie-murphy.png";
+import andyYu from "@/assets/andy-yu.png";
+import ryanXie from "@/assets/ryan-xie.png";
+import ebenHeard from "@/assets/eben-heard.png";
 
 const OurClub = () => {
   return (
@@ -66,6 +70,9 @@ const OurClub = () => {
             <div className="grid md:grid-cols-4 gap-6">
               <Card>
                 <CardHeader>
+                  <div className="w-full h-80 overflow-hidden rounded-md mb-4">
+                    <img src={maddieMurphy} alt="Maddie Murphy" className="w-full h-full object-cover" style={{ objectPosition: '50% 30%' }} />
+                  </div>
                   <CardTitle>Maddie Murphy</CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -75,6 +82,9 @@ const OurClub = () => {
 
               <Card>
                 <CardHeader>
+                  <div className="w-full h-80 overflow-hidden rounded-md mb-4">
+                    <img src={andyYu} alt="Andy Yu" className="w-full h-full object-cover" style={{ objectPosition: '50% 30%' }} />
+                  </div>
                   <CardTitle>Andy Yu</CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -84,6 +94,9 @@ const OurClub = () => {
 
               <Card>
                 <CardHeader>
+                  <div className="w-full h-80 overflow-hidden rounded-md mb-4">
+                    <img src={ryanXie} alt="Ryan Xie" className="w-full h-full object-cover" style={{ objectPosition: '50% 30%' }} />
+                  </div>
                   <CardTitle>Ryan Xie</CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -93,6 +106,9 @@ const OurClub = () => {
 
               <Card>
                 <CardHeader>
+                  <div className="w-full h-80 overflow-hidden rounded-md mb-4">
+                    <img src={ebenHeard} alt="Eben Heard" className="w-full h-full object-cover" style={{ objectPosition: '50% 30%' }} />
+                  </div>
                   <CardTitle>Eben Heard</CardTitle>
                 </CardHeader>
                 <CardContent>
