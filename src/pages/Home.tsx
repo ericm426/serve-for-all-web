@@ -14,7 +14,7 @@ const Home = () => {
         <section className="bg-gradient-to-br from-primary/10 via-secondary/10 to-background py-20">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center">
-              <img src="/favicon.png" alt="Serve For All" className="h-32 w-32 mx-auto mb-6" />
+              <img src="/favicon.png" alt="Serve For All" className="h-32 mx-auto mb-6" />
               <h1 className="text-5xl font-bold mb-6">Serve For All</h1>
               <p className="text-xl text-muted-foreground mb-8">
                 Empowering underserved communities through tennis education and mentorship
