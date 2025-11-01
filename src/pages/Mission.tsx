@@ -1,5 +1,6 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import tennisGroup from "@/assets/tennis-group.jpg";
 
 const Mission = () => {
   return (
@@ -14,6 +15,14 @@ const Mission = () => {
             <p className="text-xl text-muted-foreground leading-relaxed">
               Tennis is an expensive sport. Juniors often spend thousands to simply start playing. We at Serve For All Tennis Club want to allow everyone to enjoy the art of tennis. Our mission is to introduce, improve, and refine players' skill sets and mentality. We welcome all junior players who wish to take another step forward in their tennis career.
             </p>
+          </div>
+
+          <div className="mt-12">
+            <img 
+              src={tennisGroup} 
+              alt="Serve For All Tennis Club students and coaches on the court" 
+              className="w-full rounded-lg shadow-lg"
+            />
           </div>
         </div>
       </main>
