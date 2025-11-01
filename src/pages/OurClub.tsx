@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import danielMa from "@/assets/daniel-ma.png";
 import ericMu from "@/assets/eric-mu.jpg";
+import kennethHu from "@/assets/kenneth-hu.png";
 
 const OurClub = () => {
   return (
@@ -21,6 +22,9 @@ const OurClub = () => {
             <div className="grid md:grid-cols-3 gap-6">
               <Card>
                 <CardHeader>
+                  <div className="w-full h-80 overflow-hidden rounded-md mb-4">
+                    <img src={kennethHu} alt="Kenneth Hu" className="w-full h-full object-cover" style={{ objectPosition: '50% 30%' }} />
+                  </div>
                   <CardTitle>Kenneth Hu</CardTitle>
                 </CardHeader>
                 <CardContent>
