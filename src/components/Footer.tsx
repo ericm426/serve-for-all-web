@@ -25,7 +25,6 @@ export const Footer = () => {
               <Link to="/our-story" className="text-sm text-muted-foreground hover:text-primary">Our Story</Link>
               <Link to="/class-introduction" className="text-sm text-muted-foreground hover:text-primary">Class Introduction</Link>
               <Link to="/our-club" className="text-sm text-muted-foreground hover:text-primary">Our Team</Link>
-              <Link to="/news" className="text-sm text-muted-foreground hover:text-primary">News</Link>
               <Link to="/community" className="text-sm text-muted-foreground hover:text-primary">Community</Link>
             </nav>
           </div>
