@@ -33,13 +33,8 @@ export const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">Get In Touch</h3>
             <div className="flex flex-col space-y-3">
-              <Link to="/contact">
-                <Button variant="outline" className="w-full justify-start">
-                  <Phone className="mr-2 h-4 w-4" />
-                  Contact Us
-                </Button>
               </Link>
-              <a href="mailto:info@serveforall.org">
+              <a href="mailto:serveforall.tennis@gmail.com">
                 <Button variant="outline" className="w-full justify-start">
                   <Mail className="mr-2 h-4 w-4" />
                   Email Us
