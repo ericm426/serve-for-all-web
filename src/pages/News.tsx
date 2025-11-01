@@ -17,7 +17,7 @@ const News = () => {
     { id: "may-2025-advanced", title: "May 2025 Advanced Class", month: "May 2025", level: "Advanced" },
     { id: "may-2025-intermediate", title: "May 2025 Intermediate Class", month: "May 2025", level: "Intermediate" },
     { id: "may-2025-beginner", title: "May 2025 Beginner Class", month: "May 2025", level: "Beginner" },
-    { id: "august-2024-intermediate", title: "Intermediate Class August 2024", month: "August 2024", level: "Intermediate" },
+    { id: "august-2024-intermediate", title: "2024 Archives", month: "August 2024", level: "Intermediate" },
   ];
 
   return (
