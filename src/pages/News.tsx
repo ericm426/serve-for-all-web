@@ -4,11 +4,20 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const News = () => {
-  const classSchedules = [
-    { month: "August 2025", classes: ["Advanced Class", "Intermediate Class", "Beginner Class"] },
-    { month: "July 2025", classes: ["Advanced Class", "Intermediate Class", "Beginner Class"] },
-    { month: "June 2025", classes: ["Advanced Class", "Intermediate Class", "Beginner Class"] },
-    { month: "May 2025", classes: ["Advanced Class", "Intermediate Class", "Beginner Class"] },
+  const allClasses = [
+    { id: "august-2025-advanced", title: "August 2025 Advanced Class", month: "August 2025", level: "Advanced" },
+    { id: "august-2025-intermediate", title: "August 2025 Intermediate Class", month: "August 2025", level: "Intermediate" },
+    { id: "august-2025-beginner", title: "August 2025 Beginner Class", month: "August 2025", level: "Beginner" },
+    { id: "july-2025-advanced", title: "July 2025 Advanced Class", month: "July 2025", level: "Advanced" },
+    { id: "july-2025-intermediate", title: "July 2025 Intermediate Class", month: "July 2025", level: "Intermediate" },
+    { id: "july-2025-beginner", title: "July 2025 Beginner Class", month: "July 2025", level: "Beginner" },
+    { id: "june-2025-advanced", title: "June 2025 Advanced Class", month: "June 2025", level: "Advanced" },
+    { id: "june-2025-intermediate", title: "June 2025 Intermediate Class", month: "June 2025", level: "Intermediate" },
+    { id: "june-2025-beginner", title: "June 2025 Beginner Class", month: "June 2025", level: "Beginner" },
+    { id: "may-2025-advanced", title: "May 2025 Advanced Class", month: "May 2025", level: "Advanced" },
+    { id: "may-2025-intermediate", title: "May 2025 Intermediate Class", month: "May 2025", level: "Intermediate" },
+    { id: "may-2025-beginner", title: "May 2025 Beginner Class", month: "May 2025", level: "Beginner" },
+    { id: "august-2024-intermediate", title: "Intermediate Class August 2024", month: "August 2024", level: "Intermediate" },
   ];
 
   return (
@@ -22,45 +31,40 @@ const News = () => {
             Stay informed about class schedules, events, and program updates
           </p>
 
-          <Tabs defaultValue="august-2025" className="w-full">
+          <Tabs defaultValue="august-2025-advanced" className="w-full">
             <div className="flex flex-col md:flex-row gap-8">
               <TabsList className="flex flex-col h-fit md:w-64 shrink-0">
-                <TabsTrigger value="august-2025" className="w-full justify-start">August 2025</TabsTrigger>
-                <TabsTrigger value="july-2025" className="w-full justify-start">July 2025</TabsTrigger>
-                <TabsTrigger value="june-2025" className="w-full justify-start">June 2025</TabsTrigger>
-                <TabsTrigger value="may-2025" className="w-full justify-start">May 2025</TabsTrigger>
-                <TabsTrigger value="2024" className="w-full justify-start">2024 Class</TabsTrigger>
+                {allClasses.map((classInfo) => (
+                  <TabsTrigger key={classInfo.id} value={classInfo.id} className="w-full justify-start">
+                    {classInfo.title}
+                  </TabsTrigger>
+                ))}
               </TabsList>
 
               <div className="flex-1">
 
-            {classSchedules.map((schedule) => (
-              <TabsContent 
-                key={schedule.month} 
-                value={schedule.month.toLowerCase().replace(' ', '-')}
-              >
+            {allClasses.map((classInfo) => (
+              <TabsContent key={classInfo.id} value={classInfo.id}>
                 <div className="grid gap-6">
                   <Card>
                     <CardHeader>
-                      <CardTitle>{schedule.month} Class Schedule</CardTitle>
-                      <CardDescription>Upcoming classes and registration information</CardDescription>
+                      <CardTitle>{classInfo.title}</CardTitle>
+                      <CardDescription>Class schedule and registration information</CardDescription>
                     </CardHeader>
                     <CardContent>
                       <div className="space-y-4">
-                        {schedule.classes.map((cls) => (
-                          <div key={cls} className="border-l-4 border-primary pl-4 py-2">
-                            <h3 className="font-semibold text-lg">{schedule.month} {cls}</h3>
-                            <p className="text-sm text-muted-foreground mt-1">
-                              Session starts first week of {schedule.month.split(' ')[0]}
-                            </p>
-                            <p className="text-sm text-muted-foreground">
-                              Duration: 8 weeks • Days: Tuesday & Thursday • Time: 4:00 PM - 5:30 PM
-                            </p>
-                            <p className="text-sm text-primary font-medium mt-2">
-                              Registration now open
-                            </p>
-                          </div>
-                        ))}
+                        <div className="border-l-4 border-primary pl-4 py-2">
+                          <h3 className="font-semibold text-lg">{classInfo.title}</h3>
+                          <p className="text-sm text-muted-foreground mt-1">
+                            Session starts first week of {classInfo.month.split(' ')[0]}
+                          </p>
+                          <p className="text-sm text-muted-foreground">
+                            Duration: 8 weeks • Days: Tuesday & Thursday • Time: 4:00 PM - 5:30 PM
+                          </p>
+                          <p className="text-sm text-primary font-medium mt-2">
+                            {classInfo.id === "august-2024-intermediate" ? "Class completed" : "Registration now open"}
+                          </p>
+                        </div>
                       </div>
                     </CardContent>
                   </Card>
@@ -82,37 +86,6 @@ const News = () => {
                 </div>
               </TabsContent>
             ))}
-
-            <TabsContent value="2024">
-              <Card>
-                <CardHeader>
-                  <CardTitle>2024 Class Archive</CardTitle>
-                  <CardDescription>Looking back at our 2024 programs</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    <p className="text-muted-foreground">
-                      The 2024 season was our most successful year yet! We served over 200 students 
-                      across all skill levels and saw tremendous growth in both skills and character development.
-                    </p>
-                    <div className="grid md:grid-cols-3 gap-4 mt-6">
-                      <div className="bg-primary/5 p-4 rounded-lg text-center">
-                        <div className="text-3xl font-bold text-primary">200+</div>
-                        <div className="text-sm text-muted-foreground">Students</div>
-                      </div>
-                      <div className="bg-secondary/5 p-4 rounded-lg text-center">
-                        <div className="text-3xl font-bold text-secondary">48</div>
-                        <div className="text-sm text-muted-foreground">Weeks of Programming</div>
-                      </div>
-                      <div className="bg-primary/5 p-4 rounded-lg text-center">
-                        <div className="text-3xl font-bold text-primary">25</div>
-                        <div className="text-sm text-muted-foreground">Volunteer Coaches</div>
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </TabsContent>
               </div>
             </div>
           </Tabs>
