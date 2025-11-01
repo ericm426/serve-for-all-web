@@ -6,21 +6,21 @@ const ClassIntroduction = () => {
   const classes = [
     {
       title: "Beginner Class",
-      level: "Ages 6-10",
-      description: "Perfect for first-time players. Learn basic strokes, footwork, and tennis fundamentals in a fun, supportive environment.",
-      features: ["Basic stroke techniques", "Court awareness", "Hand-eye coordination", "Sportsmanship"]
+      level: "Ages 8+",
+      description: "This class is for players with little or no tennis experience. Players will be introduced to basic tennis skills through drills and rally games. Green balls are used. Activities and games are focused on developing their interest, agility, balance, and coordination.",
+      features: []
     },
     {
       title: "Intermediate Class",
-      level: "Ages 10-14",
-      description: "For players with basic skills looking to improve. Focus on consistency, strategy, and competitive play.",
-      features: ["Advanced stroke mechanics", "Match play strategy", "Physical conditioning", "Mental toughness"]
+      level: "Ages 12+",
+      description: "AT LEAST ONE YEAR OF TENNIS EXPERIENCE REQUIRED. Students will be evaluated on-court and grouped according to ability level. This class introduces basic match play and continues to work on improving stroke fundamentals. Proper technique is emphasized along with racket control, coordination, and movement. Classes are one and a half hours long.",
+      features: []
     },
     {
       title: "Advanced Class",
-      level: "Ages 14-18",
-      description: "Intensive training for competitive players. Prepare for tournaments and high-level play.",
-      features: ["Tournament preparation", "Advanced tactics", "Strength and conditioning", "College recruitment guidance"]
+      level: "UTR 3.5+",
+      description: "This class is designed for players who compete in USTA or UTR tournaments and are preparing to play on their varsity high school team. Players will develop on-court technique, footwork, and strategy.",
+      features: []
     }
   ];
 
@@ -43,38 +43,10 @@ const ClassIntroduction = () => {
                   <CardDescription className="text-lg">{cls.level}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground mb-4">{cls.description}</p>
-                  <h4 className="font-semibold mb-2">What You'll Learn:</h4>
-                  <ul className="space-y-1">
-                    {cls.features.map((feature, idx) => (
-                      <li key={idx} className="text-sm text-muted-foreground">• {feature}</li>
-                    ))}
-                  </ul>
+                  <p className="text-muted-foreground">{cls.description}</p>
                 </CardContent>
               </Card>
             ))}
-          </div>
-
-          <div className="bg-card p-8 rounded-lg border">
-            <h2 className="text-2xl font-semibold mb-4">Program Details</h2>
-            <div className="grid md:grid-cols-2 gap-6 text-muted-foreground">
-              <div>
-                <h3 className="font-semibold text-foreground mb-2">Schedule</h3>
-                <p>Classes run year-round with seasonal sessions. Each session is 8-12 weeks long with classes held twice weekly.</p>
-              </div>
-              <div>
-                <h3 className="font-semibold text-foreground mb-2">Equipment</h3>
-                <p>All equipment provided including racquets, balls, and court access. No prior equipment ownership required.</p>
-              </div>
-              <div>
-                <h3 className="font-semibold text-foreground mb-2">Cost</h3>
-                <p>Sliding scale fees based on family income. No one turned away due to inability to pay.</p>
-              </div>
-              <div>
-                <h3 className="font-semibold text-foreground mb-2">Location</h3>
-                <p>Multiple community locations throughout the area. Classes held at public courts and partner facilities.</p>
-              </div>
-            </div>
           </div>
         </div>
       </main>
