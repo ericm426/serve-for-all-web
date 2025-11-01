@@ -17,7 +17,7 @@ const OurStory = () => {
               regional tennis clubs. We have since expanded this into year-round programs to serve the community.
             </p>
 
-            <div className="grid md:grid-cols-3 gap-6 my-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 my-8">
               <div className="text-center p-6 bg-primary/5 rounded-lg">
                 <div className="text-4xl font-bold text-primary mb-2">200+</div>
                 <div className="text-muted-foreground">Students Served</div>
@@ -29,6 +29,10 @@ const OurStory = () => {
               <div className="text-center p-6 bg-primary/5 rounded-lg">
                 <div className="text-4xl font-bold text-primary mb-2">10+</div>
                 <div className="text-muted-foreground">Volunteer Coaches</div>
+              </div>
+              <div className="text-center p-6 bg-secondary/5 rounded-lg">
+                <div className="text-4xl font-bold text-secondary mb-2">300+</div>
+                <div className="text-muted-foreground">Volunteer Hours Served</div>
               </div>
             </div>
           </div>
