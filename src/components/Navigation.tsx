@@ -80,14 +80,6 @@ export const Navigation = () => {
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <Link to="/news">
-                <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50">
-                  News
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
-
-            <NavigationMenuItem>
               <Link to="/community">
                 <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50">
                   Community
@@ -115,7 +107,6 @@ export const Navigation = () => {
                 <Link to="/contact" className="block pl-4 text-muted-foreground hover:text-primary">Contact</Link>
               </div>
               <Link to="/our-club" className="text-lg font-medium hover:text-primary">Our Team</Link>
-              <Link to="/news" className="text-lg font-medium hover:text-primary">News</Link>
               <Link to="/community" className="text-lg font-medium hover:text-primary">Community</Link>
             </nav>
           </SheetContent>
