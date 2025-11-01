@@ -10,7 +10,7 @@ const Home = () => {
       
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-primary/10 via-secondary/10 to-background min-h-[66vh] flex items-center">
+        <section className="bg-gradient-to-br from-primary/10 via-secondary/10 to-background min-h-[calc(100vh-4rem)] flex items-center">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center">
               <img src="/favicon.png" alt="Serve For All" className="h-32 mx-auto mb-6" />

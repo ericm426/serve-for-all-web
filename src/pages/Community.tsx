@@ -10,7 +10,7 @@ const Community = () => {
       <Navigation />
       
       <main className="flex-1">
-        <div className="container py-12">
+        <div className="container py-12 min-h-[calc(100vh-4rem)] flex flex-col justify-center">
           <h1 className="text-4xl font-bold mb-4">Community</h1>
           <p className="text-xl text-muted-foreground mb-12">
             Together, we're building something special
