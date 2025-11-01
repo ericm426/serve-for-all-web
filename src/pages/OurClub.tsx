@@ -30,7 +30,9 @@ const OurClub = () => {
 
               <Card>
                 <CardHeader>
-                  <img src={danielMa} alt="Daniel Ma" className="w-full h-auto rounded-md mb-4" />
+                  <div className="w-full h-80 overflow-hidden rounded-md mb-4">
+                    <img src={danielMa} alt="Daniel Ma" className="w-full h-full object-cover" style={{ objectPosition: '50% 40%' }} />
+                  </div>
                   <CardTitle>Daniel Ma</CardTitle>
                 </CardHeader>
                 <CardContent>
