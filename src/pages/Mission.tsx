@@ -11,11 +11,11 @@ const Mission = () => {
         <div className="container py-12 min-h-[calc(100vh-4rem)] flex flex-col justify-center">
           <h1 className="text-4xl font-bold mb-8">Our Mission</h1>
           
-          <div className="mb-8">
+          <div className="mb-6">
             <img 
               src={tennisGroup} 
               alt="Serve For All Tennis Club students and coaches on the court" 
-              className="w-3/5 rounded-lg shadow-lg mx-auto"
+              className="w-2/5 rounded-lg shadow-lg mx-auto"
             />
           </div>
 
