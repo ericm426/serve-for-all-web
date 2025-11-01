@@ -1,6 +1,7 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import danielMa from "@/assets/daniel-ma.png";
 
 const OurClub = () => {
   return (
@@ -29,6 +30,7 @@ const OurClub = () => {
 
               <Card>
                 <CardHeader>
+                  <img src={danielMa} alt="Daniel Ma" className="w-full h-48 object-cover rounded-md mb-4" />
                   <CardTitle>Daniel Ma</CardTitle>
                 </CardHeader>
                 <CardContent>
