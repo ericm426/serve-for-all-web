@@ -8,13 +8,11 @@ const Community = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navigation />
-      
+
       <main className="flex-1">
         <div className="container py-12 min-h-[calc(100vh-4rem)] flex flex-col justify-center">
           <h1 className="text-4xl font-bold mb-4">Community</h1>
-          <p className="text-xl text-muted-foreground mb-12">
-            Together, we're building something special
-          </p>
+          <p className="text-xl text-muted-foreground mb-12">Together, we're building something special</p>
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <Card>
@@ -26,22 +24,22 @@ const Community = () => {
                 <div className="border-l-4 border-primary pl-4">
                   <p className="font-semibold">Maria's Journey</p>
                   <p className="text-sm text-muted-foreground">
-                    "Started as a complete beginner and now competing at the regional level. 
-                    Serve For All gave me confidence on and off the court."
+                    "Started as a complete beginner and now competing at the regional leve. Serve For All gave me
+                    confidence on and off the court."
                   </p>
                 </div>
                 <div className="border-l-4 border-secondary pl-4">
                   <p className="font-semibold">James' Achievement</p>
                   <p className="text-sm text-muted-foreground">
-                    "The mentorship program helped me get into my dream college. 
-                    Tennis opened doors I never knew existed."
+                    "The mentorship program helped me get into my dream college. Tennis opened doors I never knew
+                    existed."
                   </p>
                 </div>
                 <div className="border-l-4 border-primary pl-4">
                   <p className="font-semibold">Sarah's Impact</p>
                   <p className="text-sm text-muted-foreground">
-                    "After learning here, I became a volunteer coach. Now I'm giving back to 
-                    the community that gave so much to me."
+                    "After learning here, I became a volunteer coach. Now I'm giving back to the community that gave so
+                    much to me."
                   </p>
                 </div>
               </CardContent>
@@ -54,8 +52,7 @@ const Community = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  We're grateful for our partnerships with local organizations that help make our 
-                  programs possible:
+                  We're grateful for our partnerships with local organizations that help make our programs possible:
                 </p>
                 <ul className="space-y-2 text-muted-foreground">
                   <li>• Local Parks & Recreation Department</li>
@@ -81,7 +78,9 @@ const Community = () => {
                     Share your love of tennis by coaching or mentoring students
                   </p>
                   <Link to="/contact">
-                    <Button variant="outline" size="sm">Learn More</Button>
+                    <Button variant="outline" size="sm">
+                      Learn More
+                    </Button>
                   </Link>
                 </div>
                 <div>
@@ -90,7 +89,9 @@ const Community = () => {
                     Gently used racquets, balls, and shoes help equip our students
                   </p>
                   <Link to="/contact">
-                    <Button variant="outline" size="sm">Donate Now</Button>
+                    <Button variant="outline" size="sm">
+                      Donate Now
+                    </Button>
                   </Link>
                 </div>
                 <div>
@@ -99,7 +100,9 @@ const Community = () => {
                     Support a student's journey through tennis and beyond
                   </p>
                   <Link to="/contact">
-                    <Button variant="outline" size="sm">Get Started</Button>
+                    <Button variant="outline" size="sm">
+                      Get Started
+                    </Button>
                   </Link>
                 </div>
               </div>
@@ -109,8 +112,8 @@ const Community = () => {
           <div className="bg-gradient-to-br from-primary/10 via-secondary/10 to-background p-8 rounded-lg text-center">
             <h2 className="text-3xl font-bold mb-4">Join Our Community</h2>
             <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Whether you're a player, parent, volunteer, or supporter, there's a place for you 
-              in the Serve For All community. Together, we're changing lives through tennis.
+              Whether you're a player, parent, volunteer, or supporter, there's a place for you in the Serve For All
+              community. Together, we're changing lives through tennis.
             </p>
             <Link to="/contact">
               <Button size="lg">Connect With Us</Button>
