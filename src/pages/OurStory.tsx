@@ -7,7 +7,7 @@ const OurStory = () => {
       <Navigation />
       
       <main className="flex-1">
-        <div className="container py-12">
+        <div className="container py-12 min-h-[calc(100vh-4rem)] flex flex-col justify-center">
           <h1 className="text-4xl font-bold mb-8">Our Story</h1>
           
           <div className="prose prose-lg max-w-none">
