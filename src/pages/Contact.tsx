@@ -45,7 +45,6 @@ const Contact = () => {
                 </CardContent>
               </Card>
             </div>
-          </div>
         </div>
       </main>
 
