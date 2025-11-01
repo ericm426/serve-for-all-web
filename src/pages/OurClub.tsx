@@ -2,6 +2,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import danielMa from "@/assets/daniel-ma.png";
+import ericMu from "@/assets/eric-mu.jpg";
 
 const OurClub = () => {
   return (
@@ -43,6 +44,9 @@ const OurClub = () => {
 
               <Card>
                 <CardHeader>
+                  <div className="w-full h-80 overflow-hidden rounded-md mb-4">
+                    <img src={ericMu} alt="Eric Mu" className="w-full h-full object-cover" style={{ objectPosition: '50% 30%' }} />
+                  </div>
                   <CardTitle>Eric Mu</CardTitle>
                 </CardHeader>
                 <CardContent>
