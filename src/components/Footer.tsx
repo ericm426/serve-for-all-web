@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone } from "lucide-react";
+import { Mail, Instagram } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -36,6 +36,12 @@ export const Footer = () => {
                 <Button variant="outline" className="w-full justify-start">
                   <Mail className="mr-2 h-4 w-4" />
                   Email Us
+                </Button>
+              </a>
+              <a href="https://www.instagram.com/serveforall.tennis" target="_blank" rel="noopener noreferrer">
+                <Button variant="outline" className="w-full justify-start">
+                  <Instagram className="mr-2 h-4 w-4" />
+                  Follow Us on Instagram
                 </Button>
               </a>
             </div>
