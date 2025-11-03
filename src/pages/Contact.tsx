@@ -37,7 +37,7 @@ const Contact = () => {
                       Email Us
                     </Button>
                   </a>
-                  <a href="https://www.instagram.com/serveforall.tennis" target="_blank" rel="noopener noreferrer" className="inline-block">
+                  <a href="https://www.instagram.com/serveforall" target="_blank" rel="noopener noreferrer" className="inline-block">
                     <Button variant="secondary" className="w-full sm:w-auto">
                       <Instagram className="mr-2 h-4 w-4" />
                       Follow on Instagram
