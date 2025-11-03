@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Instagram } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -30,11 +30,20 @@ const Contact = () => {
                 <p className="mb-4">
                   Interested in our programs, volunteering as a coach or mentor, or have questions? Email us and we'd love to have you join our team!
                 </p>
-                <a href="mailto:serveforall.tennis@gmail.com" className="inline-block">
-                  <Button variant="secondary">
-                    Email Us: serveforall.tennis@gmail.com
-                  </Button>
-                </a>
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <a href="mailto:serveforall.tennis@gmail.com" className="inline-block">
+                    <Button variant="secondary" className="w-full sm:w-auto">
+                      <Mail className="mr-2 h-4 w-4" />
+                      Email Us
+                    </Button>
+                  </a>
+                  <a href="https://www.instagram.com/serveforall.tennis" target="_blank" rel="noopener noreferrer" className="inline-block">
+                    <Button variant="secondary" className="w-full sm:w-auto">
+                      <Instagram className="mr-2 h-4 w-4" />
+                      Follow on Instagram
+                    </Button>
+                  </a>
+                </div>
               </CardContent>
             </Card>
           </div>
